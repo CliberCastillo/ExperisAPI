@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{799D2492-59B6-48B1-8ED8-EEA05C4BAFA5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{2E3602B4-6217-4F97-B166-41E179CC54E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - Infrastructure", "{223692C8-9230-4345-A9F9-EA3C3FE8E54E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{8DCB301F-CA6F-401B-BE22-291C1683BA62}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Servicio", "1 - Servicio", "{255EFDC2-FB91-42DE-8F54-9B9E68C6E839}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Experis.Domain", "src\Domain\Experis.Domain\Experis.Domain.csproj", "{6900F1B5-4FD1-4435-AE49-EE00BB450A74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Experis.API", "src\Servicio\Experis.API\Experis.API.csproj", "{F4A9E249-B385-47B9-8897-2AAC2E96E60E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Experis.Application", "src\Application\Experis.Application\Experis.Application.csproj", "{8FA8100F-48CD-4A74-B94A-FB43864219C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Experis.Infrastructure", "src\Infrastructure\Experis.Infrastructure\Experis.Infrastructure.csproj", "{83713FEE-6788-47BD-AFAE-3AEF88E1E177}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6900F1B5-4FD1-4435-AE49-EE00BB450A74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6900F1B5-4FD1-4435-AE49-EE00BB450A74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6900F1B5-4FD1-4435-AE49-EE00BB450A74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6900F1B5-4FD1-4435-AE49-EE00BB450A74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4A9E249-B385-47B9-8897-2AAC2E96E60E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4A9E249-B385-47B9-8897-2AAC2E96E60E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4A9E249-B385-47B9-8897-2AAC2E96E60E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4A9E249-B385-47B9-8897-2AAC2E96E60E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FA8100F-48CD-4A74-B94A-FB43864219C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FA8100F-48CD-4A74-B94A-FB43864219C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FA8100F-48CD-4A74-B94A-FB43864219C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FA8100F-48CD-4A74-B94A-FB43864219C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83713FEE-6788-47BD-AFAE-3AEF88E1E177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83713FEE-6788-47BD-AFAE-3AEF88E1E177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83713FEE-6788-47BD-AFAE-3AEF88E1E177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83713FEE-6788-47BD-AFAE-3AEF88E1E177}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2E3602B4-6217-4F97-B166-41E179CC54E0} = {799D2492-59B6-48B1-8ED8-EEA05C4BAFA5}
+		{223692C8-9230-4345-A9F9-EA3C3FE8E54E} = {799D2492-59B6-48B1-8ED8-EEA05C4BAFA5}
+		{8DCB301F-CA6F-401B-BE22-291C1683BA62} = {799D2492-59B6-48B1-8ED8-EEA05C4BAFA5}
+		{255EFDC2-FB91-42DE-8F54-9B9E68C6E839} = {799D2492-59B6-48B1-8ED8-EEA05C4BAFA5}
+		{6900F1B5-4FD1-4435-AE49-EE00BB450A74} = {2E3602B4-6217-4F97-B166-41E179CC54E0}
+		{F4A9E249-B385-47B9-8897-2AAC2E96E60E} = {255EFDC2-FB91-42DE-8F54-9B9E68C6E839}
+		{8FA8100F-48CD-4A74-B94A-FB43864219C4} = {8DCB301F-CA6F-401B-BE22-291C1683BA62}
+		{83713FEE-6788-47BD-AFAE-3AEF88E1E177} = {223692C8-9230-4345-A9F9-EA3C3FE8E54E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34942082-763E-4DB9-9260-F495BCE01C42}
+	EndGlobalSection
+EndGlobal
