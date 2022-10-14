@@ -47,12 +47,19 @@ namespace Experis.Infrastructure.Data.Repository
 
         public Product GetById(int id)
         {
-            using (var connection = new SqlConnection(_configuration.GetConnectionString("Conexion")))
+            try
             {
-                connection.Open();
-                DynamicParameters param = new DynamicParameters();
-                param.Add("@Id", id);
-                return connection.Query<Product>("GetByIdProduct", param, commandType: CommandType.StoredProcedure).First();
+                using (var connection = new SqlConnection(_configuration.GetConnectionString("Conexion")))
+                {
+                    connection.Open();
+                    DynamicParameters param = new DynamicParameters();
+                    param.Add("@Id", id);
+                    return connection.Query<Product>("GetByIdProduct", param, commandType: CommandType.StoredProcedure).First();
+                }
+            }
+            catch (Exception)
+            {
+                return null;
             }
         }
 

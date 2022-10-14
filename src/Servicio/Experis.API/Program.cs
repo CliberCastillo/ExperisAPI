@@ -4,13 +4,18 @@ using Experis.Application.Interface;
 using Experis.Application.Service;
 using Experis.Domain.Interfaces.Repository;
 using Experis.Infrastructure.Data.Repository;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.OpenApi.Models;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+builder.Services.AddFluentValidationAutoValidation();
+builder.Services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
 builder.Services.AddScoped<IProductAppService, ProductAppService>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();

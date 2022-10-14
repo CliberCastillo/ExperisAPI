@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Experis.Application.DTO;
 using Experis.Application.Interface;
+using Experis.Domain.Entities;
 using Experis.Domain.Interfaces.Repository;
 
 namespace Experis.Application.Service
@@ -17,27 +18,27 @@ namespace Experis.Application.Service
         }
         public int Create(ProductDTO productDTO)
         {
-            throw new NotImplementedException();
+            return _productRepository.Create(_mapper.Map<Product>(productDTO));
         }
 
         public int Delete(int id)
         {
-            throw new NotImplementedException();
+            return _productRepository.Delete(id);
         }
 
         public List<ProductDTO> GetAll()
         {
-            throw new NotImplementedException();
+            return _mapper.Map<List<ProductDTO>>(_productRepository.GetAll());
         }
 
         public ProductDTO GetById(int id)
         {
-            return _mapper.Map<ProductDTO>(_productRepository.GetById(1));
+            return _mapper.Map<ProductDTO>(_productRepository.GetById(id));
         }
 
         public int Update(ProductDTO productDTO)
         {
-            throw new NotImplementedException();
+            return _productRepository.Update(_mapper.Map<Product>(productDTO));
         }
     }
 }
